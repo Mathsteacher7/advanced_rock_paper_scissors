@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-class Regular extends React.Component {
+class Advance extends React.Component {
     constructor(){
         super()
         this.state = {
@@ -24,7 +24,6 @@ class Regular extends React.Component {
             
     }
     computerChoosing(){
-        console.log(this.state.player)
         const computerChoice = Math.floor(Math.random() * 3)
         if (computerChoice === 0){
             this.setState({computersrc: "https://i.imgur.com/Rf3Mi4I.jpg"})
@@ -101,4 +100,4 @@ class Regular extends React.Component {
     }
 }
 
-export default Regular
+export default Advance
