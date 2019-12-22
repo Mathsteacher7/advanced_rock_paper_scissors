@@ -7,6 +7,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import Regular from './components/games/Regular'
 import Advance from './components/games/Advance'
 import Navbar from './components/common/Navbar'
+import Footer from './components/common/Footer'
 
 import "./style.scss"
 
@@ -16,12 +17,13 @@ export default class App extends Component {
             <HashRouter>
                 
                 <Navbar/>
-                <Route path="/rockpaperscissors" component={Regular}/> 
-                <Route path="/rockpaperscissorslizardspock" component={Advance}/> 
+                <Switch>
+                    <Route path="/rockpaperscissors" component={Regular}/> 
+                    <Route path="/rockpaperscissorslizardspock" component={Advance}/>
+                </Switch>
+                <Footer/>
 
-                <footer>
-                <p>Photo by Zoltan Tasi, Morgan Harris and Skyla Design on Unsplash</p>
-                </footer>
+
             </HashRouter>
         )
     }
