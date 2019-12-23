@@ -7,6 +7,10 @@ img {
     display: flex;
     justify-content: space-between;
 }
+.player, .results, .computer {
+    width: 30%;
+    text-align: center;
+}
 button {
     padding: 0;
     margin: 0 10px
@@ -14,17 +18,53 @@ button {
 footer {
     text-align: center;
     position: absolute;
-    bottom: 0;
+    // bottom: 10;
     width: 100%;
     height: 50px;
+    color: rgb(171, 47, 19);
     a{
         text-decoration: none;
-        color: black;
+        color: rgb(171, 47, 19);
     }
+
 }
 #regular{
-    background-color: red;
+    background-image: url('https://i.imgur.com/eeVfVaD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title {
+        font-size: 65px;
+    }
+    .subtitle {
+        font-size: 60px;
+        color: rgb(16, 28, 167)
+    }
+    .text-color{
+        color: rgb(171, 47, 19);
+    }
+    .names{
+        font-size: 30px;
+    }
+    .main{
+       height: 150px; 
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 20px;
+       width: 150px;
+    }
+    .resetButton{
+        width: 10%;
+        margin-left: 45%;
+        margin-right: 45%;
+        font-size: 20px;
+        background-color: palegoldenrod;
+        
+    }
+    
+    
 }
 h1 {
     text-align: center;
+    
 }

@@ -13,6 +13,7 @@ class Regular extends React.Component {
         this.playerChoice = this.playerChoice.bind(this)
         this.computerChoosing = this.computerChoosing.bind(this)
         this.winner = this.winner.bind(this)
+        this.reset = this.reset.bind(this)
     }
 
     playerChoice(e){
@@ -50,50 +51,61 @@ class Regular extends React.Component {
                 this.setState({winner: "Let's hope"})
             }
     }
+    reset(){
+        this.setState({
+            player: 3,
+            src: "https://i.imgur.com/5wtoqPT.jpg",
+            computersrc: "https://i.imgur.com/Yi1jFrO.jpg",
+            winner: "Who will win?"
+        })
+    }
         
     render(){
 
         return(
             <div id="regular">
-                <h1 className="title">Welcome to the good old Rock Paper Scissors</h1>
+                <h1 className="title text-color">Welcome to the good old Rock Paper Scissors</h1>
                 <div className="structure">
                     <div className="player">
-                        <h3>Player</h3>
+                        <h3 className="subtitle text-color">Player</h3>
                         <div id='playerPick'>
-                            <img src={this.state.src}></img>
+                            <img className="main" src={this.state.src}></img>
                         </div>
                         <div className="options">
                             <div>  
                                 <button onClick={this.playerChoice}> 
-                                    <img src="https://i.imgur.com/Rf3Mi4I.jpg" id="0"></img>
+                                    <img  src="https://i.imgur.com/Rf3Mi4I.jpg" id="0"></img>
                                 </button> 
-                                    <p>Rock</p>
+                                    <p className="names text-color">Rock</p>
                             </div>  
                             <div>
                                 <button onClick={this.playerChoice}>
                                     <img src="https://i.imgur.com/iAVdpUK.jpg" id="1"></img>
                                 </button> 
-                                    <p>Paper</p>
+                                    <p className="names text-color">Paper</p>
                             </div>
                             <div>
                                 <button onClick={this.playerChoice}>
                                     <img src="https://i.imgur.com/2Uiz9nB.jpg" id="2"></img>
                                 </button> 
-                                    <p>Scissors</p>
+                                    <p className="names text-color">Scissors</p>
                             </div>
                         </div>
                     </div>
                     <div className="results">
-                        <h3>{this.state.winner}</h3>
+                        <h3 className="subtitle">{this.state.winner}</h3>
                     </div>
                     <div className="computer">
-                        <h3>AI</h3>
+                        <h3 className="subtitle text-color">AI</h3>
                         <div id='playerPick'>
-                            <img src={this.state.computersrc}></img>
+                            <img className="main" src={this.state.computersrc}></img>
                         </div>
 
 
                     </div>
+                </div>
+                <div>
+                    <button onClick={this.reset} className="resetButton">Reset</button>
                 </div>
             </div>
         )
