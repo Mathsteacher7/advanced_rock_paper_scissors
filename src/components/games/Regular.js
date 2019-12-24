@@ -38,7 +38,7 @@ class Regular extends React.Component {
 
     winner(number){
         switch(true){
-            case((this.state.player === 0 && number === 0) || (this.state.player === 1 && number === 1) || (this.state.player === 2 && number === 2)):
+            case(this.state.player === number):
             this.setState({winner: "It's a tie!"})
             break
             case((this.state.player === 0 && number === 2) || (this.state.player === 1 && number === 0) || (this.state.player === 2 && number === 1)):
