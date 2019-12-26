@@ -45,10 +45,32 @@ class Regular extends React.Component {
             case(this.state.player === number):
             this.setState({winner: "It's a tie!"})
             break
-            case((this.state.player === 0 && number === 2) || (this.state.player === 1 && number === 0) || (this.state.player === 2 && number === 1)):
+            case(
+                (this.state.player === 0 && number === 2) || 
+                (this.state.player === 0 && number === 3) || 
+                (this.state.player === 1 && number === 0) || 
+                (this.state.player === 1 && number === 4) || 
+                (this.state.player === 2 && number === 1) ||
+                (this.state.player === 2 && number === 3) ||
+                (this.state.player === 3 && number === 4) ||
+                (this.state.player === 3 && number === 1) ||
+                (this.state.player === 4 && number === 2) ||
+                (this.state.player === 4 && number === 0)
+                ):
             this.setState({winner: "You won!"})
             break
-            case((this.state.player === 0 && number === 1) || (this.state.player === 1 && number === 2) || (this.state.player === 2 && number === 0)):
+            case(
+                (this.state.player === 0 && number === 1) || 
+                (this.state.player === 0 && number === 4) || 
+                (this.state.player === 1 && number === 2) || 
+                (this.state.player === 1 && number === 3) || 
+                (this.state.player === 2 && number === 0) ||
+                (this.state.player === 2 && number === 4) ||
+                (this.state.player === 3 && number === 2) ||
+                (this.state.player === 3 && number === 0) ||
+                (this.state.player === 4 && number === 1) ||
+                (this.state.player === 4 && number === 3)
+                ):
             this.setState({winner: "You lost!"})
             break
             default:
