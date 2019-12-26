@@ -115,3 +115,24 @@ h1 {
         
     }
 }
+.tictactoe {
+    .boxes {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        button{
+            width: 10em;
+            height: 10em;
+            margin: 10px 60px;
+
+        }
+        .empty{
+            background-image: url('https://i.imgur.com/hnAE0wx.jpg');
+        }
+        .playerMove{
+            background-image: url('https://i.imgur.com/eTkjcpY.jpg');
+        }
+        
+    }
+}
