@@ -28,7 +28,7 @@ footer {
     }
 
 }
-#regular, #advance{
+#regular, #thegame{
     background-image: url('https://i.imgur.com/eeVfVaD.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,4 +80,13 @@ h1 {
        
     }
 
+}
+#rules {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 75%;
+        height: 75%;
+    }
 }

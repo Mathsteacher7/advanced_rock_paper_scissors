@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-class Regular extends React.Component {
+class Advance extends React.Component {
     constructor(){
         super()
         this.state = {
@@ -90,66 +90,75 @@ class Regular extends React.Component {
 
         return(
             <div id="advance">
-                <h1 className="title text-color">Welcome to the good old Rock Paper Scissors</h1>
-                <div className="structure">
-                    <div className="player">
-                        <h3 className="subtitle text-color">Player</h3>
-                        <div id='playerPick'>
-                            <img className="main" src={this.state.src}></img>
+                <div id="thegame">
+                    <h1 className="title text-color">Welcome to Rock Paper Scissors Lizard Spock</h1>
+                    <div className="structure">
+                        <div className="player">
+                            <h3 className="subtitle text-color">Player</h3>
+                            <div id='playerPick'>
+                                <img className="main" src={this.state.src}></img>
+                            </div>
+                            <div className="options">
+                                <div>  
+                                    <button onClick={this.playerChoice}> 
+                                        <img  src="https://i.imgur.com/Rf3Mi4I.jpg" id="0"></img>
+                                    </button> 
+                                        <p className="names text-color">Rock</p>
+                                </div>  
+                                <div>
+                                    <button onClick={this.playerChoice}>
+                                        <img src="https://i.imgur.com/iAVdpUK.jpg" id="1"></img>
+                                    </button> 
+                                        <p className="names text-color">Paper</p>
+                                </div>
+                                <div>
+                                    <button onClick={this.playerChoice}>
+                                        <img src="https://i.imgur.com/2Uiz9nB.jpg" id="2"></img>
+                                    </button> 
+                                        <p className="names text-color">Scissors</p>
+                                </div>
+                                <div>
+                                    <button onClick={this.playerChoice}>
+                                        <img src="https://i.imgur.com/unXfNcU.jpg" id="3"></img>
+                                    </button> 
+                                        <p className="names text-color">Lizard</p>
+                                </div>
+                                <div>
+                                    <button onClick={this.playerChoice}>
+                                        <img src="https://i.imgur.com/Y79pc9h.jpg" id="4"></img>
+                                    </button> 
+                                        <p className="names text-color">Spock</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="options">
-                            <div>  
-                                <button onClick={this.playerChoice}> 
-                                    <img  src="https://i.imgur.com/Rf3Mi4I.jpg" id="0"></img>
-                                </button> 
-                                    <p className="names text-color">Rock</p>
-                            </div>  
-                            <div>
-                                <button onClick={this.playerChoice}>
-                                    <img src="https://i.imgur.com/iAVdpUK.jpg" id="1"></img>
-                                </button> 
-                                    <p className="names text-color">Paper</p>
+                        <div className="results">
+                            <h3 className="subtitle">{this.state.winner}</h3>
+
+                        </div>
+                        <div className="computer">
+                            <h3 className="subtitle text-color">AI</h3>
+                            <div id='playerPick'>
+                                <img className="main" src={this.state.computersrc}></img>
                             </div>
-                            <div>
-                                <button onClick={this.playerChoice}>
-                                    <img src="https://i.imgur.com/2Uiz9nB.jpg" id="2"></img>
-                                </button> 
-                                    <p className="names text-color">Scissors</p>
-                            </div>
-                            <div>
-                                <button onClick={this.playerChoice}>
-                                    <img src="https://i.imgur.com/unXfNcU.jpg" id="3"></img>
-                                </button> 
-                                    <p className="names text-color">Lizard</p>
-                            </div>
-                            <div>
-                                <button onClick={this.playerChoice}>
-                                    <img src="https://i.imgur.com/Y79pc9h.jpg" id="4"></img>
-                                </button> 
-                                    <p className="names text-color">Spock</p>
-                            </div>
+
+
                         </div>
                     </div>
-                    <div className="results">
-                        <h3 className="subtitle">{this.state.winner}</h3>
-
-                    </div>
-                    <div className="computer">
-                        <h3 className="subtitle text-color">AI</h3>
-                        <div id='playerPick'>
-                            <img className="main" src={this.state.computersrc}></img>
-                        </div>
-
-
+                    <div>
+                        <button onClick={this.reset} className="resetButton">Reset</button>
                     </div>
                 </div>
-                <div>
-                    <button onClick={this.reset} className="resetButton">Reset</button>
+                <div id="rules">
+                    <div>
+                        <img src="https://i.imgur.com/x60Q04o.png"></img>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
-
             </div>
         )
     }
 }
 
-export default Regular
+export default Advance
