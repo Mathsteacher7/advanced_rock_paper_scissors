@@ -90,3 +90,28 @@ h1 {
         height: 75%;
     }
 }
+
+
+.home{
+    background-image: url('https://i.imgur.com/u9n3kiH.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+    }
+    p {
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+        margin: auto;
+        width: 40%;
+        
+    }
+}

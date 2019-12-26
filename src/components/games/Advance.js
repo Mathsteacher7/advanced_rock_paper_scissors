@@ -148,12 +148,15 @@ class Advance extends React.Component {
                         <button onClick={this.reset} className="resetButton">Reset</button>
                     </div>
                 </div>
-                <div id="rules">
-                    <div>
-                        <img src="https://i.imgur.com/x60Q04o.png"></img>
-                    </div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div>
+                    <h2 className="spacielTitle">How to play?</h2>
+                    <div id="rules">
+                        <div>
+                            <img src="https://i.imgur.com/x60Q04o.png"></img>
+                        </div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
