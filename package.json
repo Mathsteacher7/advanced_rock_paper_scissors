@@ -6,7 +6,7 @@
   "author": "Daniel H Cohen <hofcohen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "react-scripts test --env=jsdom",
     "serve": "webpack-dev-server --mode=development",
     "build": "webpack -p",
     "deploy": "yarn build && gh-pages -d dist"
@@ -15,6 +15,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@testing-library/react": "^9.4.0",
     "babel-loader": "^8.0.6",
     "bulma": "^0.8.0",
     "css-loader": "^3.4.0",
@@ -23,9 +24,10 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.2",
-    "webpack": "^4.41.4",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },

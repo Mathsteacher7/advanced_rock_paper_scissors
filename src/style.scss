@@ -122,8 +122,8 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         button{
-            width: 10em;
-            height: 10em;
+            width: 15em;
+            height: 15em;
             margin: 10px 60px;
 
         }
@@ -132,6 +132,8 @@ h1 {
         }
         .playerMove{
             background-image: url('https://i.imgur.com/eTkjcpY.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
     }

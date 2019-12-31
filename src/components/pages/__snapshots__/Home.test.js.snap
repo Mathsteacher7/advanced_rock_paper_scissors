@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> 1`] = `
+<div
+  class="home"
+>
+  <h1
+    data-testid="hometitle"
+  >
+    Let's play a game!
+  </h1>
+  <p>
+    This website is for you, so you will never be bored. I will add here games over time, so enjoy it!
+  </p>
+</div>
+`;
