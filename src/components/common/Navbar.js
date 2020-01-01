@@ -10,6 +10,7 @@ class Navbar extends React.Component {
                     <Link to="/rockpaperscissors" className="navbar-item">Rock Paper Scissors</Link>
                     <Link to="/rockpaperscissorslizardspock" className="navbar-item">Rock Paper Scissors Lizard Spock</Link>
                     <Link to="/TicTacToe" className="navbar-item">Tic Tac Toe</Link>
+                    <a href="https://mathsteacher7.github.io/Project1/" target="_blank" className="navbar-item">Mine Sweeper</a>
                 </div>
             </div>
         )
